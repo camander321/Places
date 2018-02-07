@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>@Model.GetCity()</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>@Model.GetCity()</h1>
+    
+    <form action="/remove/@Model.GetCity()" method="post">
+      <button type="submit" class="btn btn-danger">Remove Item</button>
+    </form>
+    
+    <a href="/">Return To List</a>
+    </div>
+  </body>
+</html>

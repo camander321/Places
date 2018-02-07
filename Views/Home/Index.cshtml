@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Places I've Been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Here Are Some Places I've Been!</h1>
+      <ul>
+        @foreach (var place in Model)
+        {
+          <li><a href="/@place.GetCity()">@place.GetCity()</a></li>
+        }
+      </ul>
+      <a href="/form">Add a new place</a>
+    </div>
+  </body>
+</html>
